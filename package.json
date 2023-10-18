@@ -1,0 +1,7 @@
+{
+  "name": "com.farly.farly-unity-sdk",
+  "version": "0.0.1",
+  "description": "Farly SDK for Unity",
+  "displayName": "Farly Unity SDK",
+  "documentationUrl": "https://github.com/farly-sdk/farly-unity-sdk"
+}
