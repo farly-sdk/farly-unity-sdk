@@ -17,7 +17,7 @@ Either using the editor's interface, and adding a git url to `https://github.com
 This package uses the [unity jar resolver](https://github.com/googlesamples/unity-jar-resolver?tab=readme-ov-file) to resolve dependencies. If you are using other packages that use the jar resolver, you may need to include the dependencies in your own way.
 
 ## Documentation
-//TODO:
+The full documentation can be found at https://mobsuccess.notion.site/Farly-Unity-SDK-9211e505ff7442e4be431db729c6460b?pvs=4
 
 ## Example project
 An example project is available at https://github.com/farly-sdk/farly-unity-sdk-example
