@@ -233,7 +233,7 @@ namespace FarlySDK
     public string userGender;
 
     /// <summary>
-    /// Date at which your user did signup. Timestamp in seconds since epoch.
+    /// Date at which your user did signup.
     /// </summary>
     public DateTime? userSignupDateTime;
 
@@ -264,7 +264,7 @@ namespace FarlySDK
       // store the unix timestamp as a string
       if (request.userSignupDateTime != null)
       {
-        userSignupDateTimestamp = new DateTime(2019, 1, 1).Subtract(DateTime.UnixEpoch).TotalSeconds.ToString();
+        userSignupDateTimestamp = request.userSignupDateTime.Value.ToUniversalTime().Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalSeconds.ToString();
       }
       callbackParameters = request.callbackParameters;
     }
