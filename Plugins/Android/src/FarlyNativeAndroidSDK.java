@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Date;
 
 interface FarlyNativeAndroidSDKPluginInterface {
-    void configure(String apiKey, String publisherId);
+    void configure(String publisherId);
 
     void getHostedOfferwallUrl(String requestJSON);
 
@@ -70,8 +70,7 @@ public class FarlyNativeAndroidSDK implements FarlyNativeAndroidSDKPluginInterfa
     }
 
     @Override
-    public void configure(String apiKey, String publisherId) {
-        Farly.getInstance().setApiKey(apiKey);
+    public void configure(String publisherId) {
         Farly.getInstance().setPublisherId(publisherId);
     }
 
