@@ -17,7 +17,7 @@ namespace FarlySDK
 #if UNITY_IOS
     [DllImport("__Internal")]
 #endif
-    private static extern void _configureFarly(string apiKey, string publisherId);
+    private static extern void _configureFarly(string publisherId);
 #if UNITY_IOS
     [DllImport("__Internal")]
 #endif
@@ -95,16 +95,16 @@ namespace FarlySDK
       }
     }
 
-    public static string Configure(string apiKey, string publisherId)
+    public static string Configure(string publisherId)
     {
       switch (Application.platform)
       {
         case RuntimePlatform.Android:
-          androidJavaNative.Call("configure", apiKey, publisherId);
+          androidJavaNative.Call("configure", publisherId);
           return "ok";
 
         case RuntimePlatform.IPhonePlayer:
-          _configureFarly(apiKey, publisherId);
+          _configureFarly(publisherId);
           return "ok";
 
         default:

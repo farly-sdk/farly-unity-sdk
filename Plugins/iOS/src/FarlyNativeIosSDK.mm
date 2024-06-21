@@ -64,9 +64,8 @@ OfferWallRequest* ParseRequest (const char* string)
 }
 
 extern "C" {
-    void _configureFarly (const char* apiKey, const char* publisherId)
+    void _configureFarly (const char* publisherId)
     {
-        Farly.shared.apiKey = CreateNSString(apiKey);
         Farly.shared.publisherId = CreateNSString(publisherId);
     }
 

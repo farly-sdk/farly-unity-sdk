@@ -9,7 +9,7 @@
     </androidPackage>
     <androidPackage spec="com.google.code.gson:gson:2.9.0">
     </androidPackage>
-    <androidPackage spec="com.github.farly-sdk:farly-android-sdk:1.0.3">
+    <androidPackage spec="com.github.farly-sdk:farly-android-sdk:1.0.5">
     </androidPackage>
   </androidPackages>
 
@@ -44,7 +44,7 @@
          * "subspecs" (optional)
            Subspecs to include for the pod.
      -->
-    <iosPod name="Farly" version="~> 1.0.3">
+    <iosPod name="Farly" version="~> 1.0.5">
     </iosPod>
   </iosPods>
 </dependencies>
