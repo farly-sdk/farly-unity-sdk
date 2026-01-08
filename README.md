@@ -1,7 +1,7 @@
 # Farly SDK for Unity
 
 ## Documentation
-The full documentation can be found at https://mobsuccess.notion.site/Farly-Unity-SDK-9211e505ff7442e4be431db729c6460b?pvs=4
+The full documentation can be found at https://mobsuccess-group.notion.site/Farly-Unity-SDK-2e2d6183107581239214e5aa84fae8dc
 
 ## Getting Started
 Add the package by using Unity's package manager.
